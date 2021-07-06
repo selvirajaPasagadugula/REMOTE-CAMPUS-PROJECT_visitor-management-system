@@ -4,6 +4,7 @@
   --font-secondary: "Otomanopee One", sans-serif;
 
   --color-primary: #0077b5;
+  --color-primary-lite: ;
   --color-black: #505050;
   --color-grey: #eee;
   --color-white: #fbfbfb;
@@ -17,7 +18,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-primary);
-  color: var(--color-black);
+  color: #252525;
 }
 
 body {
@@ -39,6 +40,23 @@ body {
 
 .btn-black {
   background-color: #505050;
+}
+
+.btn-success {
+  background-color: #1dd1a1;
+  ;
+}
+
+.btn-caution {
+  background-color: #ee5253;
+}
+
+.btn-yellow {
+  background-color: #feca57;
+}
+
+.btn-small {
+  padding: .4rem .8rem;
 }
 
 .btn-large {

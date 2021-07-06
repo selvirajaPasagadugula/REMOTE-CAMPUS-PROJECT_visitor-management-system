@@ -10,11 +10,6 @@
   justify-content: space-between;
 }
 
-.header-logo {
-  font-family: var(--font-secondary);
-  text-shadow: 0.1rem 0.1rem 1rem var(--color-black);
-}
-
 .header a {
   color: var(--color-grey);
   text-decoration: none;
@@ -32,6 +27,11 @@
   color: #ddd;
 }
 
+.header-logo {
+  font-family: var(--font-secondary);
+  text-shadow: 0.1rem 0.1rem 1rem var(--color-black);
+}
+
 /************************************ STATS-CARD styles **********************************/
 .stats-card {
   width: 30%;
@@ -39,4 +39,20 @@
   padding: 2rem;
   border-radius: 0.2rem;
   box-shadow: 0 0.1rem 0.2rem #252525;
+}
+/************************************ Visitor Form Styles  ************************************/
+td {
+  padding: 0.5rem;
+  color: var(--color-primary);
+}
+
+#outer-table {
+  padding: 2rem;
+}
+
+input {
+  padding: 0.3rem;
+  margin: 0 0.5rem;
+  border: none;
+  /* box-shadow: 0.1 0.01rem 0.01rem var(--color-black); */
 }

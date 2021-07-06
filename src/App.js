@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import StatsCard from "./components/StatsCard";
+import cardDetails from "./components/CardDetails";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <p style={{ padding: "10vh 5vh 0", fontSize: ".9rem" }}>
+        Hello, Mr.Rajan! Welcome back...
+      </p>
+      <div className="container">
+        {cardDetails.map((item) => {
+          console.log(1);
+          return (
+            <StatsCard
+              key={item.key}
+              title={item.title}
+              countIn={item.countIn}
+              countOut={item.countOut}
+              countSuspicious={item.countSuspicious}
+              bgcolor={item.bgcolor}
+            />
+          );
+        })}
+      </div>
+      <div className="button-container" style={{ textAlign: "center" }}>
+        <button
+          style={{
+            margin: "4rem 0 0",
+          }}
+          className="btn btn-black btn-large">
+          ENTER VISITOR DETAILS
+        </button>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,42 @@
+/************************** HEADER styles *****************************/
+.header {
+  background-color: var(--color-primary);
+  box-shadow: 0rem 0.1rem 0.2rem #252525;
+  height: 12vh;
+  padding: 5vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  font-family: var(--font-secondary);
+  text-shadow: 0.1rem 0.1rem 1rem var(--color-black);
+}
+
+.header a {
+  color: var(--color-grey);
+  text-decoration: none;
+}
+
+.header-links {
+  width: 20rem;
+  font-size: var(--font-small);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header a:hover {
+  color: #ddd;
+}
+
+/************************************ STATS-CARD styles **********************************/
+.stats-card {
+  width: 30%;
+  font-size: 0.8rem;
+  padding: 2rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.2rem #252525;
+}

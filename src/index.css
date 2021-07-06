@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/************************** CSS Custom Properties **********************/
+:root {
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Otomanopee One", sans-serif;
+
+  --color-primary: #0077b5;
+  --color-black: #505050;
+  --color-grey: #eee;
+  --color-white: #fbfbfb;
+
+  --font-large: ;
+  --font-small: 0.8rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+  color: var(--color-black);
+}
+
+body {
+  background-color: var(--color-grey);
+}
+
+.btn {
+  border: 0;
+  color: #eee;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0.1rem 0.2rem #252525;
+}
+
+.btn:hover {
+  box-shadow: 0 0.1rem 0.4rem #252525;
+}
+
+.btn-black {
+  background-color: #505050;
+}
+
+.btn-large {
+  padding: 0.8rem 1.5rem;
+}
+
+/************************* STAT CARD styles ****************************/
+.container {
+  padding: 5vh;
+
+  display: flex;
+  justify-content: space-between;
 }

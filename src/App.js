@@ -1,31 +1,20 @@
-// import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+import Home from "./containers/Home";
 import "./App.css";
-import Header from "./components/Header";
-import StatsCard from "./components/StatsCard";
-import cardDetails from "./components/CardDetails";
-import EnterVisitor from "./containers/EnterVisitorPage";
-
-const createCard = (item) => {
-  return (
-    <StatsCard
-      key={item.key}
-      title={item.title}
-      countIn={item.countIn}
-      countOut={item.countOut}
-      countSuspicious={item.countSuspicious}
-      bgcolor={item.bgcolor}
-    />
-  );
-};
+import Dashboard from "./containers/Dashboard";
+import SearchVisitor from "./containers/SearchVisitor";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <p className="text-greet">Hello, Mr.Rajan! Welcome back...</p>
-      <div className="container">{cardDetails.map(createCard)}</div>
-      <EnterVisitor></EnterVisitor>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/searchVisitor" exact component={SearchVisitor} />
+          <Route path="/dashboard" exact component={Dashboard} />
+        </Switch>
+      </Router>
     </div>
   );
 }

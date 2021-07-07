@@ -1,19 +1,29 @@
 import React from "react";
-import "./component_styles.css";
+import { Link } from "react-router-dom";
+
+import "./styles_components.css";
 
 const Header = () => {
   return (
     <div className="header">
-      <a href="/" className="header-logo">
-        Visitor Management System
-      </a>
+      <Link to="/">
+        <a href="/" className="header-logo">
+          Visitor Management System
+        </a>
+      </Link>
+
       <div className="header-links">
-        <a href="#" className="header-link">
-          SEARCH VISITOR
-        </a>
-        <a href="#" className="header-link">
-          DASHBOARD
-        </a>
+        <Link to="/searchVisitor">
+          <a href="#" className="header-link">
+            SEARCH VISITOR
+          </a>
+        </Link>
+        <Link to="/dashboard">
+          <a href="#" className="header-link">
+            DASHBOARD
+          </a>
+        </Link>
+
         <a href="#" className="header-link">
           LOGOUT
         </a>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 
-import VisitorForm from "./../components/VisitorForm";
-import "./EnterVisitorPage.css";
+import VisitorForm from "../../components/VisitorForm";
+import "./styles.css";
 
 Modal.setAppElement("#root");
 

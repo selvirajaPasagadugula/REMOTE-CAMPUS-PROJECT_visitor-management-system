@@ -14,7 +14,7 @@ const SearchVisitor = () => {
           placeholder="Enter the Visitor ID to Search"
           className="search-visitor-text-box"
         />
-        <button className="btn btn-success btn-search">Search</button>
+        <button className="btn btn-large btn-success btn-search">Search</button>
       </div>
     </div>
   );

@@ -1,8 +1,9 @@
 .search-visitor-text-box {
-    padding: 1rem;
-    border-radius: 5rem;
+    padding: .7rem;
+    border-radius: 1rem 2rem 2rem 1rem;
     font-size: large;
     width: 50vw;
+    box-shadow: .01rem .01rem .01rem var(--color-black);
 }
 
 .div-search-visitor {
@@ -14,8 +15,5 @@
 }
 
 .btn-search {
-    margin: 0 1rem;
-    width: 10rem;
-    padding: .7rem 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
